@@ -17,32 +17,32 @@ const Home = () => {
   return (
     <div className="text-center">
       <Navbar />
-      <div class="row mx-4">
-        <Jumbotron />
+      <Jumbotron />
+      <div className="container-fluid">
+        <div class="row mx-4">
+          <SingleCard
+            title={defCardTitle}
+            text={defCardText}
+            imageURL={cardImage}
+          />
+          <SingleCard
+            title={defCardTitle}
+            text={defCardText}
+            imageURL={cardImage}
+          />
+          <SingleCard
+            title={defCardTitle}
+            text={defCardText}
+            imageURL={cardImage}
+          />
+          <SingleCard
+            title={defCardTitle}
+            text={defCardText}
+            imageURL={cardImage}
+          />
+        </div>
       </div>
 
-      <div class="row mx-4">
-        <SingleCard
-          title={defCardTitle}
-          text={defCardText}
-          imageURL={cardImage}
-        />
-        <SingleCard
-          title={defCardTitle}
-          text={defCardText}
-          imageURL={cardImage}
-        />
-        <SingleCard
-          title={defCardTitle}
-          text={defCardText}
-          imageURL={cardImage}
-        />
-        <SingleCard
-          title={defCardTitle}
-          text={defCardText}
-          imageURL={cardImage}
-        />
-      </div>
       <Footer />
     </div>
   );
